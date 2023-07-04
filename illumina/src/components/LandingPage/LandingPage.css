@@ -1,0 +1,20 @@
+.landingPage {
+  min-height: 60vh;
+  width: 100%;
+  /* background-image: url('../../assets/LandingPageTest.png'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.title-landing {
+    color: var(--cream);
+    text-align: center;
+  }
+
+/* MEDIA SCREEN */
+@media only screen and (max-width: 468px) { 
+  .title-landing {
+    font-size: small;
+  }
+}
+

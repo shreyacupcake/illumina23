@@ -1,0 +1,10 @@
+.title-countdown, .timer{
+    font-size: 3rem;
+    color: var(--violet);
+}
+
+@media only screen and (max-width: 468px) {
+    .title-countdown {
+        font-size: 1.5rem;
+    }
+}

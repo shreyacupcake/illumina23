@@ -1,0 +1,130 @@
+.prizes {
+  min-height: 115vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-prizes {
+  color: var(--lightblue);
+  text-align: center;
+  font-size: 4rem;
+  }
+
+.big-prizes, .small-prizes{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vh;
+}
+
+.gap{
+  height: 10vh;
+}
+
+img{
+  margin-bottom: 10px;
+}
+
+.first, .second, .third {
+  width: 15vw;
+  height: 15vw;
+  margin: 0 20px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--cream);
+  font-size: xx-large;
+  line-height: 1.25;
+}
+
+.uiux, .pitch, .freshers {
+  width: 15vw;
+  height: 15vw;
+  margin: 0 20px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--cream);
+  font-size: x-large;
+  line-height: 1.25;
+}
+
+
+/* MEDIA SCREEN */
+
+@media only screen and (max-width: 468px) {  
+  .prizes {
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-prizes {
+  color: var(--lightblue);
+  text-align: center;
+  /*font-size: 3.25rem;*/
+  font-size: 275%;
+  }
+  
+  .big-prizes, .small-prizes{
+    /*display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;*/
+    display: grid;
+    grid-template-columns:30% 30% 30%;
+    margin: 5px 0px;
+  }
+  
+  .gap{
+    height: 4vh;
+  }
+  
+  .first, .second, .third {
+    width: 20vw;
+    height: 20vw;
+    margin: 0 20px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--cream);
+    font-size: medium;
+  }
+  .uiux, .pitch, .freshers {
+    width: 25vw;
+    height: 25vw;
+    margin: 0 20px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--cream);
+    font-size: medium;
+  }
+  .prize-text-3{
+    text-align: center;
+    width: auto;
+    /*margin: 0px 10px 0px 0px;*/
+    padding-right: 10px;
+  }
+}

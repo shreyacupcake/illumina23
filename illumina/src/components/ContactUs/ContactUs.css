@@ -1,0 +1,107 @@
+.contactUs {
+  min-height: 10vh;
+  width: 100%;
+  background-color: #57024148;
+  position: fixed;
+  bottom: 0;
+}
+
+/* .title-contact-us {
+  color: var(--lightblue);
+  text-align: left;
+  font-size: 4rem;
+  padding-left: 150px;
+  } */
+
+  .links, .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    min-height: 10vh;
+  }
+
+  .left-image {
+    background-image: url(../../assets/vit-logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 225px;
+    height: 100px;
+    cursor: pointer;
+  }
+  
+  .right-image {
+    background-image: url(../../assets/iei-logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 100px;
+    cursor: pointer;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+  }
+
+  .instagram {
+    background-image: url(../../assets/icon-instagram.png);
+    background-size: cover;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+  .linkedin {
+    background-image: url(../../assets/icon-linkedin.png);
+    background-size: cover;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+  .facebook {
+    background-image: url(../../assets/icon-facebook.png);
+    background-size: cover;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+/* MEDIA SCREEN */
+
+@media only screen and (max-width: 468px) {
+  .links{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-image,
+  .right-image {
+    margin-bottom: 10px;
+  }
+
+  .social a {
+    width: 20px;
+    height: 20px;
+  }
+
+  .instagram,
+  .linkedin,
+  .facebook {
+    width: 20px;
+    height: 20px;
+  }
+}

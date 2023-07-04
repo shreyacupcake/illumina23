@@ -1,0 +1,148 @@
+.AllComponents {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation {
+    display: block;
+    position: relative;
+	z-index: 10;
+}
+
+.topSection {
+    position: relative;
+  }
+
+  .background-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .parallax-layers-container {
+    position: relative;
+    z-index: 2;
+  }
+
+.animation_layer {
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat-x;
+    min-height: 110vh;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	position: fixed;
+}
+
+#auroraB {
+    background-image: url(./assets/AuroraB.png);
+}
+
+#front6 {
+    background-image: url(./assets/front6new.png);
+}
+
+#front5 {
+    background-image: url(./assets/front5.png);
+}
+
+#front4 {
+    background-image: url(./assets/front4.png);
+}
+
+#front3 {
+    background-image: url(./assets/front3new.png);
+}
+
+#front2 {
+    background-image: url(./assets/front2.png);
+}
+
+#front1 {
+    background-image: url(./assets/front1new.png);
+}
+
+#treesF {
+    background-image: url(./assets/TreesF.png);
+}
+
+.title{
+    color: var(--cream);
+    text-align: center;
+    text-justify: auto;
+    text-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 999;
+    
+}
+.title-scroll {
+    max-height: 1000vh;
+    overflow-y: auto;
+  }
+
+#title-text {
+    font-size: 7rem;
+    font-weight: 700;
+    color: cornsilk;
+    display: block;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.80;
+    margin-bottom: -10px;
+  }
+
+.curved-button {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--violet);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    opacity: 0.95;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+.register{
+    z-index: 1;
+    text-decoration: none;
+}
+
+/* MEDIA SCREEN */
+@media only screen and (max-width: 468px) { 
+    #title-text{
+        font-size: 17vw;
+    }
+    .animation_layer.parallax{
+        visibility: hidden;
+    }
+    .background-div{
+        min-height: 90vh;
+        background-image: url(/src/assets/landingpagevertical.png);
+        background-size: cover;
+    }
+    #auroraB, #front6, #front5, #front4, #front3, #front2, #front1, #treesF {
+        visibility: hidden;
+    }
+    .curved-button {
+        font-size: 4vw;
+  }
+  #title-text {
+    margin-bottom: 0px;
+  }
+}

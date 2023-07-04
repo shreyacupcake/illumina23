@@ -1,0 +1,10 @@
+.updates {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.title-updates {
+    color: var(--lightblue);
+    text-align: center;
+    font-size: 4rem;
+  }

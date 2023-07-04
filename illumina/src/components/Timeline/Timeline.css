@@ -1,0 +1,26 @@
+.timeline {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url('../../assets/timelinealt.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title-timeline {
+  color: var(--lightblue);
+  text-align: center;
+  font-size: 4rem;
+  }
+
+  @media screen and (max-width: 426px) {
+    .timeline {
+      min-height: 130vh;
+      background-image: url(../../assets/newnewtimeline.png);
+      background-size: 150vw;
+    }
+
+    .title-timeline{
+      font-size: 275%;
+    }
+  }

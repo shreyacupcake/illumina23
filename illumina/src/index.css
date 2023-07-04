@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--violet);
+  border-radius: 5px;
+}
+
+/* SCROLL BAR */
+
+body {
+  margin: 0;
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  background-color: var(--navy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --navy: #080118;
+  --violet: #a2229d;
+  --darkblue: #29009e;
+  --lightblue: #01cdfa;
+  --cream: #f3f9f9;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* MEDIA SCREEN */
+@media only screen and (max-width: 468px) { 
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}

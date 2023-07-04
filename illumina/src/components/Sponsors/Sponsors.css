@@ -1,0 +1,149 @@
+.sponsors {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-sponsors, .updates {
+  color: var(--lightblue);
+  text-align: center;
+  font-size: 4rem;
+  }
+
+.updates{
+  padding-top: 10vh;
+}
+
+.sponsor-cards{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  height: 40vh; /* To adjust the position of the cards on the section */
+}
+
+.sponsor-tilt {
+  width: 15vw;
+  height: 15vw;
+  background: #a2229d50;
+  margin: 0 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+}
+
+#yoode{
+  background-image: url(../../assets/yoode.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#skill-vertex{
+  background-image: url(../../assets/skill-vertex.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#orom{
+  background-image: url(../../assets/orom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#aromas{
+  background-image: url(../../assets/aromas.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* MEDIA SCREEN */
+
+@media only screen and (max-width: 468px) {
+  .sponsors {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .title-sponsors, .updates {
+    color: var(--lightblue);
+    text-align: center;
+    /*font-size: 3.25rem;*/
+    font-size: 275%;
+    }
+
+  .updates{
+    padding-top: 30vh;
+  }
+  
+  .sponsor-cards{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    column-gap: 5vw;
+    row-gap: 10vw;
+    height: 30vh; /* To adjust the position of the cards on the section */
+  }
+  
+  .sponsor-tilt {
+    width: 30vw;
+    height: 30vw;
+    background: #a2229d50;
+    margin: 0px 0px 5px 25px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  #yoode{
+    background-image: url(../../assets/yoode.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #skill-vertex{
+    background-image: url(../../assets/skill-vertex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #orom{
+    background-image: url(../../assets/orom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #aromas{
+    background-image: url(../../assets/aromas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .sponsor-tilt {
+    transform-style: preserve-3d;
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .updates{
+    padding-top: 15vh;
+  }
+
+}
